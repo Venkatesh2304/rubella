@@ -1,4 +1,4 @@
-#returns the linearly transformed data for all age groups 
+#returns the linearly transformed data for all age groups .
 import numpy as np
 def transform(data,ages1,no_scale=False) : 
     if type(ages1) == list : ages1 = np.array(ages1)
@@ -11,4 +11,5 @@ def transform(data,ages1,no_scale=False) :
     for i in range(len(data)): 
         data1 += [temp[i]]*diff[i]
     return np.array(data1[:50])
+
 
