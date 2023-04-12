@@ -11,6 +11,7 @@ import matplotlib.pyplot as plt
 _df = pd.read_excel("data/seropositive_vellore.xlsx")
 
 def exponential(x, a, b):
+    if type(x) == list : x = np.array(x)
     return a*np.exp(-b*x)
 
 def log_likelihood(params, x):
