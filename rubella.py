@@ -108,6 +108,7 @@ X_ = np.linspace(min(x), max(x), 500)
 Y_ = X_Y_Spline(X_)
 plt.xlim(left = 2010, right=2040)
 plt.plot(X_  ,Y_)
+plt.ylabel("No of CRS Cases")
 plt.show()
 
 
